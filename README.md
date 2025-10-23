@@ -6,7 +6,7 @@
 
 專案簡介，Project_Pokemon-Mimikyu_NeuroVision 是一個基於 TensorFlow/Keras 的影像分類專案，專門用來辨識寶可夢 **Mimikyu** 與 **Pikachu**。Mimikyu（日語：ミミッキュ）是一種會偽裝成 Pikachu 的寶可夢，原因在於為了獲得更多朋友。由於外觀相似，對模型來說辨識具有挑戰性。本專案目的是使用 __深度學習模型（Deep Learning）__ 中的 EfficientNetB0 CNN 模型（EfficientNetB0 是一種卷積神經網路（CNN）架構（以 MBConv/inverted residual＋Squeeze-and-Excitation 為核心，並採用 compound scaling）作為影像分類骨幹，用來辨識寶可夢 Mimikyu 與 Pikachu 的二分類任務。
 
-### 🎯 專案目標
+## 專案目標
 1. **建立高準確度分類模型**  
    使用 EfficientNetB0 作為骨幹網路（Backbone），在有限的資料下達到最佳分類效果。
 2. **解決外觀相似的分類挑戰**  
@@ -18,10 +18,10 @@
 5. **便於深度學習模型部署**  
    支援輸出 `.keras` 與 `.h5` 格式，方便在不同環境載入與使用。
 
-### 📊 資料集說明
+## 資料集說明
 本專案的資料集格式與 [Kaggle: Pokémon Gen 1 - 151 Classes Classification](https://www.kaggle.com/datasets/hongdcs/pokemon-gen1-151-classes-classification) 類似，但僅保留 **Mimikyu** 與 **Pikachu** 兩類，並依照訓練需求進行資料切分。
 
-### 🛠️ 使用技術
+## 使用技術
 
 **(1) 建模與資料分析工具**
 - 語言與環境：Python 3.x、Jupyter Notebook
@@ -35,7 +35,7 @@
     - 指標：accuracy、（可選）AUC、roc_curve、confusion_matrix、classification_report、學習曲線（loss／accuracy）
     - 管線化：tf.data（cache／shuffle／prefetch）、Callbacks（ModelCheckpoint、EarlyStopping）、模型匯出（.keras／.h5）
 
-**(2) 建模與分析流程**
+** 建模與分析流程**
 
 A. 資料準備
 
@@ -69,7 +69,7 @@ E. 推論與部署
    2. 批量推論：對資料夾或清單批次預測並輸出圖表。
    3. 模型輸出：匯出 .keras / .h5 完整模型（含架構與權重），於任意支援環境載入部署。
 
-### 📊 批量推論結果
+## 批量推論結果
 
 以下為模型在測試集（Test set）上隨機抽樣 12 張圖片進行批量推論的結果：  
 本次抽樣可評估 12 張，整體準確率：66.667%  
