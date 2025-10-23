@@ -76,6 +76,10 @@ E. 推論與部署
 
 <p align="center">
   <img src="assets/batch_prediction_test.png" alt="Batch Inference Results" width="90%">
-</p>
+</p>  
+
+## 參考資料
+
+資料來源： Kaggle 資料集 https://www.kaggle.com/datasets/hongdcs/pokemon-gen1-151-classes-classification
 
 
