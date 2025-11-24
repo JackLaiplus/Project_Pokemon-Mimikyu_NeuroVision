@@ -4,9 +4,9 @@
   <img src="assets/mimikyu.png" alt="Mimikyu Banner" width="90%">
 </p>
 
-專案簡介，Project_Pokemon-Mimikyu_NeuroVision 是專門用來辨識寶可夢 **Mimikyu** 與 **Pikachu** 的專案。Mimikyu（日語：ミミッキュ）是一種會偽裝成 Pikachu 的寶可夢。由於外觀相似，對模型來說辨識具有挑戰性。
+專案簡介，Project_Pokemon-Mimikyu_NeuroVision 專案目的是用 __深度學習（Deep Learning）__ 來辨識寶可夢 **Mimikyu** 與 **Pikachu** 。Mimikyu（日語：ミミッキュ）是一種會偽裝成 Pikachu 的寶可夢。由於外觀相似，對模型來說辨識具有挑戰性。
 
-本專案是使用 __深度學習模型（Deep Learning）__ 中的 EfficientNetB0 CNN 模型（EfficientNetB0 是一種卷積神經網路（CNN）架構（以 MBConv/inverted residual＋Squeeze-and-Excitation 為核心，並採用 compound scaling）作為影像分類骨幹，用來辨識寶可夢 Mimikyu 與 Pikachu 的二分類任務。
+本專案是使用 EfficientNetB0 CNN 模型（EfficientNetB0 是一種卷積神經網路（CNN）架構（以 MBConv/inverted residual＋Squeeze-and-Excitation 為核心，並採用 compound scaling）作為影像分類骨幹，用來辨識寶可夢 Mimikyu 與 Pikachu 的二分類任務。
 
 ## 專案目標
 1. **建立高準確度分類模型**  
