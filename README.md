@@ -4,7 +4,7 @@
   <img src="assets/mimikyu.png" alt="Mimikyu Banner" width="90%">
 </p>
 
-專案簡介，Project_Pokemon-Mimikyu_NeuroVision 是一個基於 TensorFlow/Keras 的影像分類專案，專門用來辨識寶可夢 **Mimikyu** 與 **Pikachu**。Mimikyu（日語：ミミッキュ）是一種會偽裝成 Pikachu 的寶可夢，原因在於為了獲得更多朋友。由於外觀相似，對模型來說辨識具有挑戰性。本專案目的是使用 __深度學習模型（Deep Learning）__ 中的 EfficientNetB0 CNN 模型（EfficientNetB0 是一種卷積神經網路（CNN）架構（以 MBConv/inverted residual＋Squeeze-and-Excitation 為核心，並採用 compound scaling）作為影像分類骨幹，用來辨識寶可夢 Mimikyu 與 Pikachu 的二分類任務。
+專案簡介，Project_Pokemon-Mimikyu_NeuroVision 是專門用來辨識寶可夢 **Mimikyu** 與 **Pikachu**。Mimikyu（日語：ミミッキュ）是一種會偽裝成 Pikachu 的寶可夢，原因在於為了獲得更多朋友。由於外觀相似，對模型來說辨識具有挑戰性。本專案是使用 __深度學習模型（Deep Learning）__ 中的 EfficientNetB0 CNN 模型（EfficientNetB0 是一種卷積神經網路（CNN）架構（以 MBConv/inverted residual＋Squeeze-and-Excitation 為核心，並採用 compound scaling）作為影像分類骨幹，用來辨識寶可夢 Mimikyu 與 Pikachu 的二分類任務。
 
 ## 專案目標
 1. **建立高準確度分類模型**  
@@ -27,7 +27,7 @@
 - 語言與環境：Python 3.x、Jupyter Notebook
 - 資料處理：Pandas、NumPy、Pillow（影像 I/O／resize／格式轉換）
 - 視覺化：Matplotlib（學習曲線、ROC、推論結果網格）
-- 深度學習（TensorFlow/Keras，神經網路）：
+- 深度學習：
     - 前處理／資料增強：Keras Preprocessing Layers（Rescaling、RandomFlip、RandomRotation、RandomZoom、RandomContrast）
     - 架構／骨幹：EfficientNetB0（ImageNet 預訓練，CNN）、Keras Functional API（增強層＋Backbone＋分類頭 Dense(2, softmax)）
     - 訓練與最佳化：Adam、SparseCategoricalCrossentropy（logits/softmax 依實作對應）、學習率設定（可含 warmup／decay 規劃）
